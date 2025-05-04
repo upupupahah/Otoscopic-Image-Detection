@@ -1,0 +1,703 @@
+2025-05-05T00:44:03,551 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8697
+2025-05-05T00:44:03,555 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:03,555 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:03,556 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8697
+2025-05-05T00:44:03,556 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:03,557 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:03,597 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:03,646 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:09,852 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:09,853 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:09,853 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:09,909 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:09,910 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:09,910 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:09,911 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:09,911 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:09,911 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:09,911 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:09,912 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:09,912 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:09,913 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:09,913 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:09,913 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:09,913 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:09,914 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:09,914 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:09,914 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:09,914 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:09,915 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:09,915 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:09,915 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:09,915 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:12,796 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8750
+2025-05-05T00:44:12,797 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:12,805 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:12,805 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8750
+2025-05-05T00:44:12,805 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:12,806 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:12,808 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:12,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:14,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:14,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:14,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:14,177 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:14,177 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:14,177 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:14,177 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:14,178 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:14,178 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:14,178 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:14,178 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:14,178 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:14,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:14,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:14,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:14,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:14,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:14,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:14,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:14,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:14,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:14,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:14,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:14,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:16,928 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8772
+2025-05-05T00:44:16,929 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:16,938 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:16,938 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8772
+2025-05-05T00:44:16,939 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:16,939 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:16,940 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:16,955 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:18,336 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:18,337 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:18,337 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:18,338 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:18,339 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:18,339 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:18,339 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:18,339 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:18,339 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:18,340 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:18,340 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:18,340 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:18,340 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:18,341 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:18,342 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:18,342 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:18,342 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:18,343 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:18,343 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:18,343 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:18,343 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:18,343 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:18,344 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:18,344 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:22,120 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8788
+2025-05-05T00:44:22,121 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:22,130 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:22,131 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8788
+2025-05-05T00:44:22,131 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:22,131 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:22,134 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:22,152 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:23,503 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:23,503 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:23,503 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:23,504 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:23,505 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:23,505 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:23,505 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:23,506 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:23,506 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:23,506 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:23,506 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:23,506 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:23,507 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:23,508 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:28,268 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8811
+2025-05-05T00:44:28,269 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:28,277 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:28,277 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8811
+2025-05-05T00:44:28,277 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:28,277 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:28,279 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:28,297 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:29,597 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:29,597 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:29,597 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:29,598 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:29,598 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:29,599 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:29,600 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:29,600 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:29,600 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:29,600 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:29,600 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:29,601 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:29,602 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:36,365 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8827
+2025-05-05T00:44:36,366 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:36,375 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:36,375 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8827
+2025-05-05T00:44:36,375 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:36,375 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:36,377 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:36,392 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:37,683 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:37,683 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:37,683 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:37,684 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:37,685 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:37,685 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:37,685 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:37,685 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:37,685 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:37,686 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:37,686 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:37,686 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:37,686 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:37,686 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:37,687 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:37,687 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:37,687 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:37,687 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:37,687 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:37,688 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:37,688 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:37,688 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:37,688 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:37,688 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:44:47,551 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8848
+2025-05-05T00:44:47,552 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:44:47,560 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:44:47,560 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8848
+2025-05-05T00:44:47,560 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:44:47,560 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:44:47,565 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:44:47,583 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:44:48,903 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:44:48,903 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:44:48,903 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:44:48,905 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:44:48,905 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:48,905 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:44:48,905 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:44:48,905 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:44:48,906 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:44:48,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:45:03,760 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8895
+2025-05-05T00:45:03,761 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:45:03,769 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:45:03,769 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8895
+2025-05-05T00:45:03,769 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:45:03,770 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:45:03,771 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:45:03,788 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:45:05,318 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:45:05,319 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:45:05,319 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:45:05,320 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:45:05,321 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:45:05,322 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:45:05,323 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:45:28,096 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=8962
+2025-05-05T00:45:28,097 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:45:28,107 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:45:28,107 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]8962
+2025-05-05T00:45:28,107 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:45:28,108 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:45:28,108 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:45:28,122 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:45:29,661 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:45:29,662 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:45:29,662 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:45:29,663 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:45:29,663 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:45:29,663 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:45:29,663 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:45:29,664 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:45:29,665 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:45:29,666 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T00:46:05,471 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=9059
+2025-05-05T00:46:05,472 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T00:46:05,480 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T00:46:05,481 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]9059
+2025-05-05T00:46:05,481 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T00:46:05,481 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T00:46:05,482 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T00:46:05,499 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T00:46:06,824 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T00:46:06,825 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T00:46:06,825 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T00:46:06,826 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T00:46:06,826 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:46:06,826 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T00:46:06,826 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T00:46:06,827 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T00:46:06,827 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T00:46:06,827 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T00:46:06,827 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/1595b2e1bad84d53b7dc47d2998fd305/handler.py", line 19, in initialize
+2025-05-05T00:46:06,827 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T00:46:06,828 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T00:46:06,829 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T00:46:06,829 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T00:46:06,829 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T00:46:06,830 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:00:49,467 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=9593
+2025-05-05T01:00:49,469 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:00:49,476 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:00:49,476 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]9593
+2025-05-05T01:00:49,476 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:00:49,477 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:00:49,492 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:00:49,532 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:00:50,895 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:00:50,896 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:00:50,896 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:00:50,897 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:00:50,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:50,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:00:50,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:00:50,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:00:50,899 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:00:50,899 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:00:50,899 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/be6f4d4e933d47cd83e5258e9ca51515/handler.py", line 28, in initialize
+2025-05-05T01:00:50,899 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:00:50,900 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:00:50,900 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:00:50,900 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:00:50,900 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:00:50,900 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:50,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:00:50,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:00:50,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:00:50,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:00:50,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:00:50,902 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:00:50,902 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:00:53,772 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=9634
+2025-05-05T01:00:53,773 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:00:53,780 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:00:53,780 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]9634
+2025-05-05T01:00:53,780 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:00:53,781 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:00:53,782 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:00:53,808 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:00:55,162 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:00:55,163 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:00:55,164 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:00:55,165 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:00:55,165 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:55,165 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:00:55,165 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:00:55,166 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:00:55,166 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:00:55,166 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:00:55,166 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/be6f4d4e933d47cd83e5258e9ca51515/handler.py", line 28, in initialize
+2025-05-05T01:00:55,167 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:00:55,167 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:00:55,167 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:00:55,167 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:00:55,167 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:00:55,168 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:55,168 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:00:55,168 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:00:55,168 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:00:55,168 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:00:55,169 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:00:55,169 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:00:55,169 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:00:58,022 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=9656
+2025-05-05T01:00:58,023 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:00:58,032 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:00:58,033 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]9656
+2025-05-05T01:00:58,034 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:00:58,034 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:00:58,036 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:00:58,051 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:00:59,460 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:00:59,460 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:00:59,461 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:00:59,462 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:00:59,463 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:59,463 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:00:59,463 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:00:59,463 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:00:59,463 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:00:59,464 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:00:59,464 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/be6f4d4e933d47cd83e5258e9ca51515/handler.py", line 28, in initialize
+2025-05-05T01:00:59,464 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:00:59,464 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:00:59,465 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:00:59,466 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:00:59,466 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:00:59,466 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:00:59,466 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:00:59,466 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:22:21,885 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10687
+2025-05-05T01:22:21,886 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:22:21,893 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:22:21,893 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10687
+2025-05-05T01:22:21,893 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:22:21,894 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:22:21,907 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:22:21,938 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:22:23,184 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:22:23,184 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:22:23,184 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:22:23,186 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:22:23,186 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:23,186 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:22:23,186 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:22:23,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:22:23,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:22:23,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:22:23,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e52cc43b92744f23bb0d0daa46d638a6/handler.py", line 31, in initialize
+2025-05-05T01:22:23,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:22:23,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:22:23,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:22:23,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:22:23,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:22:23,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:22:23,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:22:25,868 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10727
+2025-05-05T01:22:25,869 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:22:25,876 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:22:25,876 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10727
+2025-05-05T01:22:25,877 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:22:25,877 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:22:25,878 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:22:25,897 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:22:27,152 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:22:27,152 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:22:27,152 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:22:27,153 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:22:27,154 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:22:27,155 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e52cc43b92744f23bb0d0daa46d638a6/handler.py", line 31, in initialize
+2025-05-05T01:22:27,155 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:22:27,155 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:22:27,155 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:22:27,156 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:22:27,156 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:22:27,156 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:22:27,157 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:22:27,158 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:22:29,834 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10749
+2025-05-05T01:22:29,835 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:22:29,843 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:22:29,843 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10749
+2025-05-05T01:22:29,843 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:22:29,843 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:22:29,845 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:22:29,864 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:22:31,203 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:22:31,203 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:22:31,204 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:22:31,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:22:31,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:31,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:22:31,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:22:31,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e52cc43b92744f23bb0d0daa46d638a6/handler.py", line 31, in initialize
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:22:31,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:22:31,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:22:31,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:22:31,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:31,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:22:31,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:22:31,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:22:31,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:22:31,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:22:31,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:22:31,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:22:34,890 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10772
+2025-05-05T01:22:34,890 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:22:34,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:22:34,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10772
+2025-05-05T01:22:34,898 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:22:34,899 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:22:34,901 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:22:34,926 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:22:36,170 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:22:36,171 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:22:36,171 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:22:36,172 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:22:36,172 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:36,172 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:22:36,173 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:22:36,173 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:22:36,173 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:22:36,173 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:22:36,173 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e52cc43b92744f23bb0d0daa46d638a6/handler.py", line 31, in initialize
+2025-05-05T01:22:36,174 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:22:36,174 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:22:36,174 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:22:36,174 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:22:36,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:22:36,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:36,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:22:36,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:22:36,175 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:22:36,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:22:36,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:22:36,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:22:36,176 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:22:40,843 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10795
+2025-05-05T01:22:40,844 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:22:40,855 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:22:40,856 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10795
+2025-05-05T01:22:40,856 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:22:40,856 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:22:40,858 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:22:40,881 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:22:42,203 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:22:42,203 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:22:42,203 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Failed to load model my_model, exception No model weights could be loaded
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 133, in load_model
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     service = model_loader.load(
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -               ^^^^^^^^^^^^^^^^^^
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_loader.py", line 143, in load
+2025-05-05T01:22:42,205 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     initialize_fn(service.context)
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e52cc43b92744f23bb0d0daa46d638a6/handler.py", line 31, in initialize
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     super().initialize(context)
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 223, in initialize
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("No model weights could be loaded")
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: No model weights could be loaded
+2025-05-05T01:22:42,206 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend worker process died.
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 301, in <module>
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     worker.run_server()
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 268, in run_server
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     self.handle_connection(cl_socket)
+2025-05-05T01:22:42,207 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/model_service_worker.py", line 201, in handle_connection
+2025-05-05T01:22:42,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise RuntimeError("{} - {}".format(code, result))
+2025-05-05T01:22:42,208 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - RuntimeError: 500 - Unknown exception
+2025-05-05T01:25:50,813 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=10945
+2025-05-05T01:25:50,814 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:25:50,821 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:25:50,821 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]10945
+2025-05-05T01:25:50,822 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:25:50,822 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:25:50,838 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:25:50,876 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:25:52,124 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:25:52,125 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:25:52,125 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:26:59,503 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746390419
+2025-05-05T01:26:59,667 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:26:59,667 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:26:59,668 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:26:59,668 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:26:59,668 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:26:59,669 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:26:59,669 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:26:59,670 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:26:59,671 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:26:59,671 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:26:59,671 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:26:59,671 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:26:59,672 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:26:59,672 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c3ed2a8e0>
+2025-05-05T01:27:04,187 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746390424
+2025-05-05T01:27:04,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:27:04,188 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:27:04,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:27:04,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:27:04,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:04,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:27:04,189 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:27:04,190 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:04,190 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:27:04,190 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:27:04,190 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:04,191 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:27:04,191 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:27:04,191 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c25f81da0>
+2025-05-05T01:27:05,141 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746390425
+2025-05-05T01:27:05,141 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:27:05,142 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:27:05,143 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:05,143 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:27:05,143 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:27:05,143 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:27:05,143 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:27:05,144 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:27:05,144 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c25f81d00>
+2025-05-05T01:28:36,235 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746390516
+2025-05-05T01:28:36,236 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:28:36,236 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:28:36,236 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:28:36,236 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:28:36,237 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:28:36,237 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:28:36,237 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:28:36,237 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:28:36,238 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:28:36,238 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:28:36,238 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:28:36,238 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:28:36,238 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:28:36,239 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c25f274c0>
+2025-05-05T01:41:39,945 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746391299
+2025-05-05T01:41:39,946 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:41:39,946 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:41:39,946 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:39,947 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:41:39,948 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:41:39,948 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:39,948 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:41:39,948 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:41:39,948 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c25f81da0>
+2025-05-05T01:41:43,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746391303
+2025-05-05T01:41:43,179 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Invoking custom service failed.
+2025-05-05T01:41:43,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Traceback (most recent call last):
+2025-05-05T01:41:43,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/service.py", line 135, in predict
+2025-05-05T01:41:43,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     ret = self._entry_point(input_batch, self.context)
+2025-05-05T01:41:43,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:43,180 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/torch_handler/base_handler.py", line 455, in handle
+2025-05-05T01:41:43,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     data_preprocess = self.preprocess(data)
+2025-05-05T01:41:43,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -                       ^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:43,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/tmp/models/e1259b592ce0457288ac566e5c725fe6/handler.py", line 54, in preprocess
+2025-05-05T01:41:43,181 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     img = Image.open(io.BytesIO(img)).convert("RGB")
+2025-05-05T01:41:43,182 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-05-05T01:41:43,182 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -   File "/home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3572, in open
+2025-05-05T01:41:43,182 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG -     raise UnidentifiedImageError(msg)
+2025-05-05T01:41:43,182 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x769c25f81d00>
+2025-05-05T01:42:17,138 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=12611
+2025-05-05T01:42:17,139 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T01:42:17,146 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T01:42:17,146 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]12611
+2025-05-05T01:42:17,146 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T01:42:17,147 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T01:42:17,163 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T01:42:17,201 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T01:42:18,523 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T01:42:18,523 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T01:42:18,523 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T01:42:54,615 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746391374
+2025-05-05T02:12:52,539 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=15539
+2025-05-05T02:12:52,540 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-05T02:12:52,547 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-05T02:12:52,548 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]15539
+2025-05-05T02:12:52,548 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-05T02:12:52,549 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-05T02:12:52,564 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-05T02:12:52,604 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-05T02:12:54,160 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-05T02:12:54,160 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - proceeding without onnxruntime
+2025-05-05T02:12:54,160 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-05T02:33:41,375 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746394421
+2025-05-05T02:36:52,070 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746394612
+2025-05-05T02:37:05,473 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746394625

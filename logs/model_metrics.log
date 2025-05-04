@@ -1,0 +1,8 @@
+2025-05-05T01:42:56,734 - HandlerTime.ms:2118.08|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:761da876-1a6b-45cd-9842-9906dc3b7d2a,timestamp:1746391376
+2025-05-05T01:42:56,741 - PredictionTime.ms:2118.46|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:761da876-1a6b-45cd-9842-9906dc3b7d2a,timestamp:1746391376
+2025-05-05T02:33:43,423 - HandlerTime.ms:2046.61|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:d43b150f-1a81-4506-97f8-64737b9f2bc7,timestamp:1746394423
+2025-05-05T02:33:43,424 - PredictionTime.ms:2046.86|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:d43b150f-1a81-4506-97f8-64737b9f2bc7,timestamp:1746394423
+2025-05-05T02:36:52,132 - HandlerTime.ms:61.53|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:9b1b7750-a40a-4754-ab0b-b0f0ef0794ea,timestamp:1746394612
+2025-05-05T02:36:52,133 - PredictionTime.ms:61.69|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:9b1b7750-a40a-4754-ab0b-b0f0ef0794ea,timestamp:1746394612
+2025-05-05T02:37:05,513 - HandlerTime.ms:39.26|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:68fe00c4-cb31-473e-a4bd-6cbe6302c4cd,timestamp:1746394625
+2025-05-05T02:37:05,513 - PredictionTime.ms:39.41|#ModelName:my_model,Level:Model|#hostname:pupu-Stvullinc,requestID:68fe00c4-cb31-473e-a4bd-6cbe6302c4cd,timestamp:1746394625
