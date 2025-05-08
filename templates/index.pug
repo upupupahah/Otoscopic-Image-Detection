@@ -1,0 +1,148 @@
+doctype html
+html(lang="ru")
+  head
+    title Image Classification
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    style.
+      .container { max-width: 800px; margin-top: 50px; }
+      #video { width: 100%; background: #000; margin: 10px 0; }
+      #preview { max-width: 100%; margin: 20px 0; border: 2px solid #ddd; }
+      .btn-group { margin: 10px 0; }
+      button { margin: 5px; }
+
+  body
+    .container
+      h1.mb-4 Классификация изображений
+
+      .btn-group
+        button#captureBtn.btn.btn-primary Снять фото
+        button#uploadBtn.btn.btn-secondary Загрузить фото
+        input#fileInput(type="file" accept="image/*" hidden)
+
+      video#video(autoplay playsinline hidden)
+      button#snapBtn.btn.btn-success(hidden) Сделать снимок
+
+      img#preview
+
+      button#submitBtn.btn.btn-warning Отправить на распознавание
+
+      #result.mt-4
+
+    script.
+      // Проверка поддержки медиа устройств
+      function checkCameraSupport() {
+        return !!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+      }
+
+      document.getElementById('captureBtn').addEventListener('click', async () => {
+        // Проверка поддержки API
+        if (!checkCameraSupport()) {
+          alert('Ваш браузер не поддерживает доступ к камере!');
+          return;
+        }
+
+        // Проверка локального хоста или HTTPS
+        if (window.location.hostname !== 'localhost' && window.location.protocol !== 'https:') {
+          alert('Доступ к камере возможен только по HTTPS или на localhost!');
+          return;
+        }
+
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({
+            video: {
+              facingMode: 'environment',
+              width: { ideal: 1280 },
+              height: { ideal: 720 }
+            }
+          });
+
+          const video = document.getElementById('video');
+          video.hidden = false;
+          video.srcObject = stream;
+          document.getElementById('snapBtn').hidden = false;
+        } catch (err) {
+          let errorMessage = 'Ошибка доступа к камере: ';
+          if (err.name === 'NotAllowedError') {
+            errorMessage += 'Разрешите доступ к камере в настройках браузера';
+          } else {
+            errorMessage += err.message;
+          }
+          alert(errorMessage);
+        }
+      });
+
+      document.getElementById('snapBtn').addEventListener('click', () => {
+        const video = document.getElementById('video');
+        const canvas = document.createElement('canvas');
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0);
+
+        const dataURL = canvas.toDataURL('image/jpeg');
+        document.getElementById('preview').src = dataURL;
+
+        // Остановка потока
+        video.srcObject.getTracks().forEach(track => track.stop());
+        video.hidden = true;
+        document.getElementById('snapBtn').hidden = true;
+      });
+
+      // Обработчики для загрузки файла
+      document.getElementById('uploadBtn').addEventListener('click', () => {
+        document.getElementById('fileInput').click();
+      });
+
+      document.getElementById('fileInput').addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+          const url = URL.createObjectURL(file);
+          document.getElementById('preview').src = url;
+        }
+      });
+
+      // Отправка на сервер
+      document.getElementById('submitBtn').addEventListener('click', async () => {
+        const preview = document.getElementById('preview');
+        if (!preview.src) {
+          alert('Пожалуйста, выберите или сделайте фото!');
+          return;
+        }
+
+        let blob;
+        try {
+          if (preview.src.startsWith('data:')) {
+            // Конвертация Data URL в Blob
+            const res = await fetch(preview.src);
+            blob = await res.blob();
+          } else {
+            // Получение Blob из URL
+            const response = await fetch(preview.src);
+            blob = await response.blob();
+          }
+
+          const formData = new FormData();
+          formData.append('file', blob, 'image.jpg');
+
+          const response = await fetch('/predict', {
+            method: 'POST',
+            body: formData
+          });
+
+          if (!response.ok) throw new Error('Ошибка сервера');
+
+          const result = await response.json();
+          document.getElementById('result').innerHTML = `
+            <div class="alert alert-success">
+              <strong>Результат:</strong><br>
+              Класс: ${result.class}<br>
+              Уверенность: ${result.confidence.toFixed(4)}
+            </div>
+          `;
+        } catch (error) {
+          document.getElementById('result').innerHTML = `
+            <div class="alert alert-danger">
+              Ошибка: ${error.message}
+            </div>
+          `;
+        }
+      });
