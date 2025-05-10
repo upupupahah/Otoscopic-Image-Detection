@@ -1,4 +1,12 @@
-2025-05-09T00:10:18,284 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746731418
-2025-05-09T00:10:22,534 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746731422
-2025-05-09T00:11:29,477 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746731489
-2025-05-09T00:13:56,034 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746731636
+2025-05-10T19:18:26,283 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - s_name_part0=/tmp/.ts.sock, s_name_part1=9000, pid=4899
+2025-05-10T19:18:26,286 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Listening on port: /tmp/.ts.sock.9000
+2025-05-10T19:18:26,286 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Successfully loaded /home/pupu/Desktop/project/.venv/lib/python3.12/site-packages/ts/configs/metrics.yaml.
+2025-05-10T19:18:26,287 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - [PID]4899
+2025-05-10T19:18:26,287 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch worker started.
+2025-05-10T19:18:26,287 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Python runtime: 3.12.3
+2025-05-10T19:18:26,358 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Connection accepted: /tmp/.ts.sock.9000.
+2025-05-10T19:18:26,414 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - model_name: my_model, batchSize: 1
+2025-05-10T19:18:32,934 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - OpenVINO is not enabled
+2025-05-10T19:18:33,479 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - ONNX enabled
+2025-05-10T19:18:33,480 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Torch TensorRT not enabled
+2025-05-10T19:22:41,850 [INFO ] W-9000-my_model_1.0-stdout MODEL_LOG - Backend received inference at: 1746886961

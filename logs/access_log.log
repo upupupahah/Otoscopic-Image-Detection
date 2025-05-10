@@ -1,4 +1,1 @@
-2025-05-09T00:10:22,531 - /127.0.0.1:48002 "POST /predictions/my_model HTTP/1.1" 200 4252
-2025-05-09T00:10:22,589 - /127.0.0.1:48006 "POST /predictions/my_model HTTP/1.1" 200 2540
-2025-05-09T00:11:29,540 - /127.0.0.1:57990 "POST /predictions/my_model HTTP/1.1" 200 66
-2025-05-09T00:13:56,126 - /127.0.0.1:34930 "POST /predictions/my_model HTTP/1.1" 200 94
+2025-05-10T19:22:46,055 - /127.0.0.1:39132 "POST /predictions/my_model HTTP/1.1" 200 4212
